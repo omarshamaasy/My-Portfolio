@@ -1,0 +1,82 @@
+.GoToContent{
+  background-color: #5e38c4;
+  color: white;
+  border-radius: 24px;
+  margin: 60px 70px;
+  padding: 50px 60px;
+  background-image: url('/LInes2.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.gtc{
+    margin: 0 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      position: relative;
+      z-index: 1000;
+
+}
+.gtc-content{ 
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 9px;
+  }
+  p {
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+    span{
+      font-weight: 700;
+    }
+  }
+}
+
+.gtc-btn {
+  height: 5vh;
+  width: 15%;
+  display: inline-block; 
+  background-color: #0C96E2;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1040px) {
+  .GoToContent {
+    margin: 30px 15px;
+    padding: 30px 20px;
+  }
+
+  .gtc {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gtc-content h1 {
+    font-size: 26px;
+  }
+
+  .gtc-content p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .gtc-btn {
+    width: 100%;
+    font-size: 14px;
+    height: 45px;
+  }
+}
+

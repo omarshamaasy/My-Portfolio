@@ -1,0 +1,117 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  a {
+    text-decoration: none;
+    font-size: 16;
+    font-weight: 500;
+    color: inherit;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+} 
+
+.nav-links a:hover {
+  color: #0C96E2;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  color: #0C96E2;
+}
+
+
+body.dark-mode .navbar {
+  background-color: #1B2431;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 600;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+
+.mode-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 1040px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: inherit;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 40px;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .navbar .logo {
+    display: none;
+  }
+
+  .mobile-logo a:hover {
+  color: inherit;
+  }
+}

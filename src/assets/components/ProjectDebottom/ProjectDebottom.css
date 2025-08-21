@@ -1,0 +1,118 @@
+.project-grid {
+  padding: 60px 70px;
+  text-align: center;
+}
+
+.section-header p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    color: #0c96e2;
+    margin-bottom: 8px;
+}
+
+.section-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-header span {
+  color: #0c96e2;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 260px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-card .icon {
+  text-align: right;
+  font-size: 20px;
+  color: #0c96e2;
+}
+
+.icon-btn{
+  background-color: inherit;
+  border: none;
+}
+
+.slide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider-buttons button {
+    color: #0c96e2;
+    background-color: inherit;
+    font-size: 40px;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+@media (min-width: 320px) and (max-width: 1040px) {
+  .project-grid {
+    padding: 40px 20px;
+  }
+
+  .slide {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .section-header h1 {
+    font-size: 24px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .slider-buttons button {
+    font-size: 32px;
+  }
+}
+
